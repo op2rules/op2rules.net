@@ -1,0 +1,12 @@
+RewriteEngine On
+Options +FollowSymLinks
+#RewriteRule ^op2rules.net/([a-zA-Z]+)$ http://www.op2rules.net/appRedirect.php?code=$1 [R=301]
+RewriteRule ^([a-zA-Z0-9]+)$ http://op2rules.net/appRedirect.php?code=$1 [R=301]
+#RewriteRule ^([A-Za-z]+)\/\B http://op2rules.net/$1.php [R]  well i can't get this to work damnit
+#RewriteCond %{HTTP:X-Requested-With} =XMLHttpRequest
+#RewriteRule .? - [S=2]
+#RewriteCond %{REQUEST_URI} ^/index.php
+#RewriteRule .? - [S=1]
+#RewriteRule ([a-zA-Z]+.php[?=a-zA-Z0-9]*)$ http://op2rules.net/index.php?p=$2 [R]
+
+ 
