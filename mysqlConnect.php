@@ -1,7 +1,5 @@
 <?php
 require_once('settings.php');
-//$connection = mysql_connect($dbhost, $dbuser, $dbpass) or die("MySQL Error: " . mysql_error());
-//mysql_select_db($dbname, $connection) or die("MySQL Error: " . mysql_error());
 
 $mysqli = new mysqli($dbhost, $dbuser, $dbpass, $dbname);
 
@@ -40,7 +38,4 @@ function getUserInfo($name){
 	$userInfo = mysql_fetch_array($user);
 	return $userInfo;
 }
-
-
-
 ?>
